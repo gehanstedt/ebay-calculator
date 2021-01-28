@@ -32,7 +32,7 @@ $(document).ready(function() {
           finalValueFee = parseFloat (finalValueFee.toFixed (2));
           totalCost = parseFloat (acquisitionCost + finalValueFee + shippingFee);
           profit = sellPrice - totalCost
-          profitPercentage = sellPrice / totalCost;
+          profitPercentage = profit / totalCost;
           profitPercentage = profitPercentage * 100;
           profitPercentage = profitPercentage.toFixed (2);
 

@@ -47,4 +47,8 @@ $(document).ready(function() {
       event.preventDefault ();
       calculate ();
     });
+
+    $('.input-field').click( function( event_details ) {
+      $(this).select();
+    });
 });

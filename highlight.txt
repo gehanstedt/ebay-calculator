@@ -1,0 +1,5 @@
+$(document).ready( function() {
+  $('#id').click( function( event_details ) {
+      $(this).select();
+        });
+	});

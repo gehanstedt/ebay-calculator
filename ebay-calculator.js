@@ -1,6 +1,6 @@
 // Constant definitions
-const ebayItemFee = parseFloat (0.75);
-const ebayShippingFee = parseFloat (0.25);
+const ebayItemFee = parseFloat (0.35);
+const ebayFinalValueFlatFee = parseFloat (0.30);
 const eBayFeePercentage = parseFloat (0.1235);
 
 //Form variables
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
         if ((sellPrice != null) || (acquisitionCost != null) || (shippingFee != null)) {
           console.log ("Here.")
-          finalValueFee = parseFloat (ebayItemFee + ebayShippingFee + sellPrice * eBayFeePercentage);
+          finalValueFee = parseFloat (ebayItemFee + ebayFinalValueFlatFee + sellPrice * eBayFeePercentage);
           finalValueFee = parseFloat (finalValueFee.toFixed (2));
           totalCost = parseFloat (acquisitionCost + finalValueFee + shippingFee);
           profit = sellPrice - totalCost

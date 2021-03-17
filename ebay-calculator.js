@@ -31,7 +31,8 @@ $(document).ready(function() {
           finalValueFee = parseFloat (ebayItemFee + ebayFinalValueFlatFee + sellPrice * eBayFeePercentage);
           finalValueFee = parseFloat (finalValueFee.toFixed (2));
           totalCost = parseFloat (acquisitionCost + finalValueFee + shippingFee);
-          profit = sellPrice - totalCost
+          profit = sellPrice - totalCost;
+          profit = profit.toFixed (2);
           profitPercentage = profit / totalCost;
           profitPercentage = profitPercentage * 100;
           profitPercentage = profitPercentage.toFixed (2);
